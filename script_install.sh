@@ -2,7 +2,7 @@
 PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
 export PATH
 
-DIR=/home/administrador/Downloads/cinnamon-scripts/install
+DIR=home/administrador/Downloads/cinnamon-scripts/install
 
 Principal() {
   echo "Script customizacao - Linux Mint Cinnamon"
