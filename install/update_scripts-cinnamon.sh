@@ -4,17 +4,19 @@ export PATH
 #####################################
 ###  BAIXANDO PACOTES DE SCRIPTS  ###
 #####################################
-DIR=/home/administrador/Downloads
+DIR=/home/$USER/Downloads
 cd $DIR
 pwd
+mkdir cinnamon-scripts
 sleep 3
-wget --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip
+wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P cinnamon-scripts/
 sleep 3
-unzip master.zip
+unzip master.zip -o -d /cinnamon-scripts
 sleep 3
-mv $DIR/cinnamon-master/ $DIR/cinnamon-scripts/
+#mv $DIR/cinnamon-master/ $DIR/cinnamon-scripts/
 sleep 3
 rm master.zip
+rm -R cinnamon-master/
 
 echo "Scripts baixado com sucesso...[OK]"
 
