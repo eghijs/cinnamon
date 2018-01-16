@@ -16,5 +16,5 @@ apt-get --purge remove transmission-gtk -y
 apt-get --purge remove xplayer -y
 apt-get --purge remove xviewer -y
 clear
-echo "Aplicativos removidos...[OK]"
+echo "Listas de aplicativos removidos...[OK]"
 #
