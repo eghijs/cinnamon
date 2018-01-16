@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH=$HOME/Downloads/cinnamon-scripts/install
+PATH=/home/administrador/Downloads/cinnamon-scripts/install
 
 Principal() {
   echo "Script customizacao - Linux Mint Cinnamon"
