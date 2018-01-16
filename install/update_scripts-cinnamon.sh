@@ -22,11 +22,6 @@ rm -R $DIR/cinnamon-master/
 
 echo "Scripts baixado com sucesso...[OK]"
 
-find . -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
+find $DIR -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
 echo "Scripts configurado para execucao...[OK]"
 #exit
-
-##!/bin/bash
-#base="https://github.com"
-#url=`curl -s --url "https://github.com/Enrico204/Whatsapp-Desktop/releases" | awk -F"\"" ' /amd64/ {print $2}' | head -1`
-#wget --quiet --show-progress "$base$url" -O Whatsapp.deb
