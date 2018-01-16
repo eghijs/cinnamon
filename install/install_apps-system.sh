@@ -22,3 +22,5 @@ apt-get install deborphan -y
 "
 echo 
 echo "Pacotes instalados via apt-get..."
+sleep 5
+#exit
