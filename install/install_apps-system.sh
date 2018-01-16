@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-export PATH=/usr/bin:/usr/sbin:/bin:/sbin
+PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
+export PATH
 #####################################
 ###   INSTALANDO NOVOS PACOTES    ###
 #####################################

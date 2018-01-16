@@ -1,5 +1,8 @@
 #!/bin/bash
-PATH=/home/administrador/Downloads/cinnamon-scripts/install
+PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
+export PATH
+
+DIR=/home/administrador/Downloads/cinnamon-scripts/install
 
 Principal() {
   echo "Script customizacao - Linux Mint Cinnamon"
@@ -41,41 +44,41 @@ Principal() {
 }
  
 Remover() {
-  ./$PATH/remover_apps-system.sh
+  ./$DIR/remover_apps-system.sh
 }
  
 Install() {
-  ./$PATH/install_apps-system.sh
+  ./$DIR/install_apps-system.sh
   Principal
 }
  
 Update() {
-  ./$PATH/update_scripts-cinnamon.sh
+  ./$DIR/update_scripts-cinnamon.sh
   Principal
 }
  
 Cron() {
-  ./$PATH/run_crontab.sh
+  ./$DIR/run_crontab.sh
   Principal
 }
  
 Adobe() {
-  ./$PATH/install_adobe.sh
+  ./$DIR/install_adobe.sh
   Principal
 }
 
 TeamViewer() {
-  ./$PATH/install_teamviewer.sh
+  ./$DIR/install_teamviewer.sh
   Principal
 }
 
 GitHub() {
-  ./$PATH/install_github.sh
+  ./$DIR/install_github.sh
   Principal
 }
 
 Conky() {
-  ./$PATH/install_conky.sh
+  ./$DIR/install_conky.sh
   Principal
 }
 
@@ -101,7 +104,7 @@ shutdown -r now
 }
 
 Clean() {
-  ./$PATH/clean_system.sh
+  ./$DIR/clean_system.sh
   Principal
 }
 Principal

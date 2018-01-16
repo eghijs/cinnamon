@@ -1,4 +1,6 @@
 #!/bin/bash
+PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
+export PATH
 
 #find -mtime +30 => quando o arquivo foi modificado, em dias.
 #find -ctime +30 => quando o arquivo foi criado, em dias.
