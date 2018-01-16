@@ -1,27 +1,27 @@
 #!/bin/bash
+DIR=home/administrador/Downloads/cinnamon-scripts/install
 PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
 export PATH
-
-DIR=home/administrador/Downloads/cinnamon-scripts/install
+clear
 
 Principal() {
   echo "Script customizacao - Linux Mint Cinnamon"
   echo "------------------------------------------"
-  echo "Opções:"
+  echo " Opções:"
   echo
-  echo "1. Remover lista pre-definida de pacotes."
-  echo "2. Instalar lista pre-definida de pacotes."
-  echo "3. Baixar scripts personalizados para cinnamon."
-  echo "4. Instalar agendamentos personalizados no cron."
-  echo "5. Instalar leitor de PDF (Adobe Reader)."
-  echo "6. Instalar acesso remoto (TeamViewer)." 
-  echo "7. Instalar cliente (GitHub)."
-  echo "8. Ativando widgets no desktop cinnamon." 
-  echo "9. Definir senha do root."
-  echo "10. Definindo o editor padrao."
-  echo "11. Reiniciar sistema."
-  echo "12. Limpeza do sistema."
-  echo "13. Sair"
+  echo "  1. Remover lista pre-definida de pacotes."
+  echo "  2. Instalar lista pre-definida de pacotes."
+  echo "  3. Baixar scripts personalizados para cinnamon."
+  echo "  4. Instalar agendamentos personalizados no cron."
+  echo "  5. Instalar leitor de PDF (Adobe Reader)."
+  echo "  6. Instalar acesso remoto (TeamViewer)." 
+  echo "  7. Instalar cliente (GitHub)."
+  echo "  8. Ativando widgets no desktop cinnamon." 
+  echo "  9. Definir senha do root."
+  echo " 10. Definindo o editor padrao."
+  echo " 11. Reiniciar sistema."
+  echo " 12. Limpeza do sistema."
+  echo " 13. Sair"
   echo
   echo -n "Qual a opção desejada: "
   read opcao
