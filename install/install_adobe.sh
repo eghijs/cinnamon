@@ -6,14 +6,15 @@
 #
 echo
 su root -c "
-add-apt-repository deb http://archive.canonical.com/ precise partner
-apt-get update -y
-clear
+apt-get install gtk2-engines-murrine libcanberra-gtk-module -y
+apt-get install libatk-adaptor libgail-common -y
 
-apt-get install adobereader-enu -y
+add-apt-repository "deb http://archive.canonical.com/ precise partner"
+apt-get update
+apt-get install adobereader-enu
 
-# Removendo repositorio Adobe Reader
-add-apt-repository -r deb http://archive.canonical.com/ precise partner
+add-apt-repository -r "deb http://archive.canonical.com/ precise partner"
+apt-get update
 "
 sleep 5
 #exit
