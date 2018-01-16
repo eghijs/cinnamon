@@ -6,12 +6,12 @@ export PATH
 #####################################
 DIR=/home/$USER/Downloads
 cd $DIR
-
+echo
 if [ -e "$DIR/cinnamon-scripts" ]
 then
-echo "o diretorio existe"
+echo "O diretorio existe"
 else
-echo "o diretorio não existe vamos criar o diretorio"
+echo "O diretorio não existe vamos criar o diretorio"
 mkdir cinnamon-scripts
 fi
 echo
@@ -33,5 +33,5 @@ echo
 find $DIR -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
 echo "Permições dos arquivos alteradas com sucesso...[ OK ]"
 echo
-echo
+sleep 5
 #exit

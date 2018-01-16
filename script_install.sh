@@ -44,41 +44,41 @@ Principal() {
 }
  
 Remover() {
-  ./$DIR/remover_apps-system.sh
+  /$DIR/remover_apps-system.sh
 }
  
 Install() {
-  ./$DIR/install_apps-system.sh
+  /$DIR/install_apps-system.sh
   Principal
 }
  
 Update() {
-  ./$DIR/update_scripts-cinnamon.sh
+  /$DIR/update_scripts-cinnamon.sh
   Principal
 }
  
 Cron() {
-  ./$DIR/run_crontab.sh
+  /$DIR/run_crontab.sh
   Principal
 }
  
 Adobe() {
-  ./$DIR/install_adobe.sh
+  /$DIR/install_adobe.sh
   Principal
 }
 
 TeamViewer() {
-  ./$DIR/install_teamviewer.sh
+  /$DIR/install_teamviewer.sh
   Principal
 }
 
 GitHub() {
-  ./$DIR/install_github.sh
+  /$DIR/install_github.sh
   Principal
 }
 
 Conky() {
-  ./$DIR/install_conky.sh
+  /$DIR/install_conky.sh
   Principal
 }
 
@@ -104,7 +104,7 @@ shutdown -r now
 }
 
 Clean() {
-  ./$DIR/clean_system.sh
+  /$DIR/clean_system.sh
   Principal
 }
 Principal
