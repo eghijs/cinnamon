@@ -21,4 +21,4 @@ apt-get --purge remove xviewer -y
 #clear
 echo
 echo "Listas de aplicativos removidos...[ OK ]"
-#
+echo
