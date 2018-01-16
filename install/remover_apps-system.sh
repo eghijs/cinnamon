@@ -5,7 +5,9 @@ export PATH
 #####################################
 ### REMOVER PACOTES DESNECESSARIO ###
 #####################################
+echo
 su root -c "
+echo
 apt-get --purge remove brasero -y
 apt-get --purge remove gimp -y
 apt-get --purge remove hexchat -y
@@ -17,5 +19,6 @@ apt-get --purge remove xplayer -y
 apt-get --purge remove xviewer -y
 "
 #clear
+echo
 echo "Listas de aplicativos removidos...[ OK ]"
 #
