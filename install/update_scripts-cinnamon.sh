@@ -7,7 +7,14 @@ export PATH
 DIR=/home/$USER/Downloads
 cd $DIR
 pwd
+if [ -e "$USER/cinnamon-scripts" ]
+then
+echo " o diretorio existe"
+else
+echo " o diretorio não existe vamos criar o diretorio"
 mkdir cinnamon-scripts
+fi
+
 sleep 3
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
 sleep 3
