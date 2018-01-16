@@ -9,13 +9,14 @@ cd $DIR
 
 if [ -e "$DIR/cinnamon-scripts" ]
 then
-echo " o diretorio existe"
+echo "o diretorio existe"
 else
-echo " o diretorio não existe vamos criar o diretorio"
+echo "o diretorio não existe vamos criar o diretorio"
 mkdir cinnamon-scripts
 fi
 
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
+echo
 echo "Arquivo baixado com sucesso...[ OK ]"
 echo
 unzip master.zip > /dev/null 
