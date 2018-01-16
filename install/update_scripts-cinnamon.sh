@@ -14,11 +14,11 @@ sleep 3
 unzip master.zip 
 sleep 3
 cd cinnamon-master/
-cp -R -v * $DIR/cinnamon-scripts
+cp -Rvpa * $DIR/cinnamon-scripts
 sleep 3
-cd ./
-rm master.zip
-rm -R cinnamon-master/
+
+rm $DIR/master.zip
+rm -R $DIR/cinnamon-master/
 
 echo "Scripts baixado com sucesso...[OK]"
 
