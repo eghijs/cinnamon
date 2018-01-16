@@ -15,20 +15,20 @@ echo " o diretorio não existe vamos criar o diretorio"
 mkdir cinnamon-scripts
 fi
 
-sleep 3
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
-sleep 3
+echo "Arquivo baixado com sucesso...[ OK ]"
+
 unzip master.zip 
-sleep 3
+echo "Arquivo descompactado com sucesso...[ OK ]"
+
 cd cinnamon-master/
-cp -Rvpa * $DIR/cinnamon-scripts
-sleep 3
+cp -Rvpa * $DIR/cinnamon-scripts > /dev/null
+echo "Arquivos copiado com sucesso...[ OK ]"
 
 rm $DIR/master.zip
 rm -R $DIR/cinnamon-master/
-
-echo "Scripts baixado com sucesso...[OK]"
+echo "Arquivos removidos com sucesso...[ OK ]"
 
 find $DIR -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
-echo "Scripts configurado para execucao...[OK]"
+echo "Permições dos arquivos alteradas com sucesso...[ OK ]"
 #exit
