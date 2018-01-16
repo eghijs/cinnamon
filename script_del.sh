@@ -20,44 +20,44 @@ echo "Todos arquivos de video deletado...[OK]"
 # find . -regextype posix-egrep -iregex '.*\.(jpg|jpeg|gif|png)' -exec bash -c 'cwebp -q 85 "$0" -o "$0".webp' {} \;
 
 # .bash_logout
-/etc/profile
-trap 'rm -f $HOME/.dotfile1 $HOME/anotherfile; exit 0' 0
-find $HOME/.
+#/etc/profile
+#trap 'rm -f $HOME/.dotfile1 $HOME/anotherfile; exit 0' 0
+#find $HOME/.
 
 
 
-cat > ~/.bash_logout << "EOF"
+#cat > ~/.bash_logout << "EOF"
 # ~/.bash_logout: executed by bash(1) when login shell exits.
 
 # when leaving the console clear the screen to increase privacy
 
-if [ "$SHLVL" = 1 ]; then
-    [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
-fi
+#if [ "$SHLVL" = 1 ]; then
+#    [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
+#fi
 
-EOF
+#EOF
 
 #!/bin/bash
 #Exemplo de script para logout "logout_script"
 #Limpa todos os arquivos temporários do usuário</pre>
-for i in *~ *.bak *.tmp; do
-find $HOME -iname "$i" -exec rm -f {} \;
-done 
+#for i in *~ *.bak *.tmp; do
+#find $HOME -iname "$i" -exec rm -f {} \;
+#done 
 
 #!/bin/bash
 # .bash_profile
  
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
- . ~/.bashrc
-fi
+#if [ -f ~/.bashrc ]; then
+# . ~/.bashrc
+#fi
  
 # Executa scripts customizados
  
-source login_script
+#source login_script
  
-# User specific environment and startup programs
+## User specific environment and startup programs
  
-PATH=$PATH:$HOME/bin
+#PATH=$PATH:$HOME/bin
  
-export PATH
+#export PATH
