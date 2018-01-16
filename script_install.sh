@@ -34,7 +34,7 @@ Principal() {
 	9) Root ;;
    10) Editor ;;
    11) Restart ;;
-   12) Clean
+   12) Clean ;;
    13) exit ;;
     *) "Opção desconhecida." ; echo ; Principal ;;
   esac
