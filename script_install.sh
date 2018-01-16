@@ -27,11 +27,11 @@ Principal() {
     2) Install ;;
     3) Update ;;
     4) Cron ;;
-	5) Adobe ;;
-	6) TeamViewer ;;
-	7) GitHub ;;
-	8) Conky ;;
-	9) Root ;;
+    5) Adobe ;;
+    6) TeamViewer ;;
+    7) GitHub ;;
+    8) Conky ;;
+    9) Root ;;
    10) Editor ;;
    11) Restart ;;
    12) Clean ;;
