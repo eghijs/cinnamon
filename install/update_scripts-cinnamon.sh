@@ -14,7 +14,7 @@ else
 echo "o diretorio não existe vamos criar o diretorio"
 mkdir cinnamon-scripts
 fi
-
+echo
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
 echo
 echo "Arquivo baixado com sucesso...[ OK ]"
@@ -32,4 +32,6 @@ echo "Arquivos removidos com sucesso...[ OK ]"
 echo
 find $DIR -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
 echo "Permições dos arquivos alteradas com sucesso...[ OK ]"
+echo
+echo
 #exit
