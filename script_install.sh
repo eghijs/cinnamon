@@ -23,7 +23,7 @@ Principal() {
   echo "12. Limpeza do sistema."
   echo "13. Sair"
   echo
-  echo -n "Qual a opção desejada? "
+  echo -n "Qual a opção desejada: "
   read opcao
   case $opcao in
     1) Remover ;;
