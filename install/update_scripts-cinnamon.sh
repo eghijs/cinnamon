@@ -7,7 +7,7 @@ export PATH
 DIR=/home/$USER/Downloads
 cd $DIR
 pwd
-if [ -e "$USER/cinnamon-scripts" ]
+if [ -e "$DIR/cinnamon-scripts" ]
 then
 echo " o diretorio existe"
 else
