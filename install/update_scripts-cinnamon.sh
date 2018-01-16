@@ -18,7 +18,7 @@ fi
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
 echo "Arquivo baixado com sucesso...[ OK ]"
 
-unzip master.zip 
+unzip master.zip > /dev/null 
 echo "Arquivo descompactado com sucesso...[ OK ]"
 
 cd cinnamon-master/
