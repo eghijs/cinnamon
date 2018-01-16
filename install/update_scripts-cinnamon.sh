@@ -6,7 +6,7 @@ export PATH
 #####################################
 DIR=/home/$USER/Downloads
 cd $DIR
-pwd
+
 if [ -e "$DIR/cinnamon-scripts" ]
 then
 echo " o diretorio existe"
@@ -17,18 +17,18 @@ fi
 
 wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
 echo "Arquivo baixado com sucesso...[ OK ]"
-
+echo
 unzip master.zip > /dev/null 
 echo "Arquivo descompactado com sucesso...[ OK ]"
-
+echo
 cd cinnamon-master/
 cp -Rvpa * $DIR/cinnamon-scripts > /dev/null
 echo "Arquivos copiado com sucesso...[ OK ]"
-
+echo
 rm $DIR/master.zip
 rm -R $DIR/cinnamon-master/
 echo "Arquivos removidos com sucesso...[ OK ]"
-
+echo
 find $DIR -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
 echo "Permições dos arquivos alteradas com sucesso...[ OK ]"
 #exit
