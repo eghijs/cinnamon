@@ -10,7 +10,6 @@ mv cinnamon-master/ cinnamon-scripts/
 rm master.zip
 echo "Scripts baixados com sucesso...[OK]"
 
-cd cinnamon-scripts/
-chmod 755 *.sh
+find . -regextype posix-egrep -iregex '.*\.(sh)' -exec chmod 755 {} \;
 echo "Scripts configurado para execucao...[OK]"
 #exit
