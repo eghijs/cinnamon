@@ -9,12 +9,14 @@ cd $DIR
 pwd
 mkdir cinnamon-scripts
 sleep 3
-wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P cinnamon-scripts/
+wget -c --quiet --show-progress https://github.com/eghijs/cinnamon/archive/master.zip -P $DIR
 sleep 3
-unzip master.zip -o -d /cinnamon-scripts
+unzip master.zip 
 sleep 3
-#mv $DIR/cinnamon-master/ $DIR/cinnamon-scripts/
+cd cinnamon-master/
+cp -R -v * $DIR/cinnamon-scripts
 sleep 3
+cd ./
 rm master.zip
 rm -R cinnamon-master/
 
