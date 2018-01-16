@@ -19,6 +19,7 @@ apt-get install chromium-browser -y
 apt-get install vlc -y
 apt-get install vim -y
 apt-get install deborphan -y
+apt-get install rdesktop -y
 "
 echo 
 echo "Pacotes instalados via apt-get..."
