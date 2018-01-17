@@ -1,20 +1,17 @@
 #!/bin/bash
 #
+PATH=/sbin:/usr/sbin:/usr/local/sbin:/bin:/usr/bin:/usr/local/bin
+export PATH
 #####################################
 ###   INSTALANDO O PACOTE ADOBE   ###
 #####################################
-#
+DIR=/home/$USER/Downloads
+
+wget -c --quiet --show-progress ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.5.5/enu/AdbeRdr9.5.5-1_i386linux_enu.deb -P $DIR
 echo
 su root -c "
-apt-get install gtk2-engines-murrine libcanberra-gtk-module -y
-apt-get install libatk-adaptor libgail-common -y
-
-add-apt-repository "deb http://archive.canonical.com/ precise partner"
-apt-get update
-apt-get install adobereader-enu
-
-add-apt-repository -r "deb http://archive.canonical.com/ precise partner"
-apt-get update
+gdebi Adbe*.deb -y
 "
+rm $DIR/Adbe*.deb
 sleep 5
 #exit
