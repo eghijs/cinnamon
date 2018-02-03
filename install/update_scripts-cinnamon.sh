@@ -4,6 +4,9 @@ export PATH
 #####################################
 ###  BAIXANDO PACOTES DE SCRIPTS  ###
 #####################################
+#
+# GitHub
+#git clone https://
 DIR=/home/$USER/Downloads
 cd $DIR
 echo

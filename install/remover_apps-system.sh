@@ -17,6 +17,7 @@ apt-get --purge remove thunderbind -y
 apt-get --purge remove transmission-gtk -y
 apt-get --purge remove xplayer -y
 apt-get --purge remove xviewer -y
+apt-get --purge remove rhythmbox -y
 "
 #clear
 echo
@@ -24,3 +25,9 @@ echo "Listas de aplicativos removidos...[ OK ]"
 echo
 sleep 5
 #exit
+
+# Desativar sessao convidado
+# echo "allow-guest=false" > /etc/lightdm/lightdm.conf
+
+# Criando usuarios padrao
+# adduser -c "Usuário" usuario
