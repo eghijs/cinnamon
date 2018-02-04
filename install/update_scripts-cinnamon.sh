@@ -6,7 +6,9 @@ export PATH
 #####################################
 #
 # GitHub
-#git clone https://
+#git clone https://github.com/eghijs/cinnamon.git
+
+
 DIR=/home/$USER/Downloads
 cd $DIR
 echo

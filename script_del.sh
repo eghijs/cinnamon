@@ -19,6 +19,9 @@ echo "Todos arquivos de audio deletado...[OK]"
 find $HOME/ -regextype posix-egrep -iregex '$VID' -delete
 echo "Todos arquivos de video deletado...[OK]" 
 
+# Esvaziando a lixeira
+rm -rf /home/$USER/.local/share/Trash/files/*
+
 # find . -regextype posix-egrep -iregex '.*\.(jpg|jpeg|gif|png)' -exec bash -c 'cwebp -q 85 "$0" -o "$0".webp' {} \;
 
 # .bash_logout
