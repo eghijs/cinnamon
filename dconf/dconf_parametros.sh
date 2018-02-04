@@ -24,3 +24,23 @@ dconf write /org/mate/caja/desktop/trash-icon-visible false
 
 # Ocultar volumes montados
 dconf write /org/mate/caja/desktop/volumes-visible false 
+
+#To backup:
+#
+#From a terminal, run:
+#
+#dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
+#
+#save the backup_of_my_cinnamon_settings file somewhere for later
+#
+#To reset to defaults:
+#
+#dconf reset -f /org/cinnamon/
+#
+#Note, cinnamon may freeze or crash doing this
+#
+#To restore all your settings:
+#
+#dconf load /org/cinnamon/ < backup_of_my_cinnamon_settings
+#
+#Again, cinnamon may freeze crash after this (recommend at least logging out/back in)
